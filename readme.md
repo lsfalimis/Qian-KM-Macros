@@ -9,3 +9,5 @@ Insert
 
 Chrome
 ![alt text](http://i.imgur.com/sfJMTrc.png "Chrome")
+
+On Custom Search Engines, see my [post](http://lsfalimis.github.io/2014/05/03/chrome-custom-search-engines-i-use/)
