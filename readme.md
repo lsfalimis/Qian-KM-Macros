@@ -19,3 +19,6 @@ Please check [here](http://lsfalimis.github.io/2014/05/04/auto-create-a-new-pass
 ###iTunes
 ![alt text](http://i.imgur.com/jHLN1be.png "iTunes")
 
+###Cross send to Twitter, Renren & Weibo
+![alt text](http://i.imgur.com/g29cwaO.png "Cross send to Twitter, Renren & Weibo")
+
