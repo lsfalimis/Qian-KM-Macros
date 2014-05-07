@@ -55,6 +55,22 @@
 		</array>
 		<key>Name</key>
 		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
 		<key>UID</key>
 		<string>C08D1793-FB4C-4CE5-837E-6FDEC97ADD1B</string>
 	</dict>
@@ -111,6 +127,22 @@
 		</array>
 		<key>Name</key>
 		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
 		<key>UID</key>
 		<string>C08D1793-FB4C-4CE5-837E-6FDEC97ADD1B</string>
 	</dict>
@@ -167,6 +199,22 @@
 		</array>
 		<key>Name</key>
 		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
 		<key>UID</key>
 		<string>C08D1793-FB4C-4CE5-837E-6FDEC97ADD1B</string>
 	</dict>
@@ -223,6 +271,22 @@
 		</array>
 		<key>Name</key>
 		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
 		<key>UID</key>
 		<string>C08D1793-FB4C-4CE5-837E-6FDEC97ADD1B</string>
 	</dict>
@@ -279,6 +343,22 @@
 		</array>
 		<key>Name</key>
 		<string>Evernote</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.evernote.Evernote</string>
+					<key>Name</key>
+					<string>Evernote</string>
+					<key>NewFile</key>
+					<string>/Applications/Evernote.app</string>
+				</dict>
+			</array>
+		</dict>
 		<key>UID</key>
 		<string>C08D1793-FB4C-4CE5-837E-6FDEC97ADD1B</string>
 	</dict>
