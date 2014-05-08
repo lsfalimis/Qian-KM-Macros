@@ -27,6 +27,6 @@ Please check [here](http://lsfalimis.github.io/2014/05/04/auto-create-a-new-pass
 
 Finnally, Evernote becomes useable. 
 
-I use KeyRemap4MacBook to map ⌃⌥⌘ to ⌘_R (⌃⌥⇧⇧ to ⇧_R), simply, ⌘_L to change view, ⌘_R to change notebook (though thru mouse actions but the mouse location can be restored, see the above screenshot, in other words, they just like menu actions.)
+I use KeyRemap4MacBook to map ⌃⌥⌘ to ⌘_R (⌃⌥⇧⇧ to ⇧_R), simply, ⌘_L to change view, ⌘_R to change notebook (though thru mouse actions but the mouse location can be restored, see the above screenshot, in other words, they are just like menu actions.)
 
 You need to get your own mouse location thru ⌘R (record) in KM.
