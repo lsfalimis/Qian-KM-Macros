@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEC=Square=KMCOLOR:255,255,255,255==86=0=0=0=KMCOLOR:0,0,0,255</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>JustDisplay</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetClipboardToText</string>
+						<key>TargetNamedClipboardRedundantDisplayName</key>
+						<string>Default Clipboard</string>
+						<key>TargetNamedClipboardUID</key>
+						<string>9278C5ED-A0D8-462C-826B-2FC5E032A173</string>
+						<key>TargetUseNamedClipboard</key>
+						<false/>
+						<key>Text</key>
+						<string>%ICUDateTime%yyyy-MM-dd HH:mm:ss%
+%PastClipboard%1%%CurrentClipboard%</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>global frontApp, frontAppName, windowTitle
+
+set windowTitle to ""
+tell application "System Events"
+	set frontApp to first application process whose frontmost is true
+	set frontAppName to name of frontApp
+	tell process frontAppName
+		tell (1st window whose value of attribute "AXMain" is true)
+			set windowTitle to value of attribute "AXTitle"
+		end tell
+	end tell
+	
+	set theContext to frontAppName &amp; ".app :: " &amp; windowTitle
+	
+	tell application "Evernote"
+		set theNewVocab to the clipboard as text
+		set _selectedNote to false
+		set _notes to get every note of every notebook where its title contains "TARGETNOTE"
+		repeat with _note in _notes
+			if length of _note is not 0 then
+				set _selectedNote to _note
+			end if
+		end repeat
+		tell item 1 of _selectedNote to append text theNewVocab &amp; return &amp; theContext &amp; return &amp; return
+	end tell
+	
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>421633766.36448699</real>
+				<key>Name</key>
+				<string>__AS_[select sentence before keystroke!] append vocab to a EN note</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>19</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>AC843D03-40BC-4AF1-BD16-4C2F969B5210</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>UID</key>
+		<string>DA8512F7-F323-46B1-8319-752E0495CFD0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEC=Square=KMCOLOR:255,255,255,255==86=0=0=0=KMCOLOR:0,0,0,255</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>KeyCode</key>
+						<integer>7</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>6912</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.3</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>KeyCode</key>
+						<integer>36</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>JustDisplay</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetClipboardToText</string>
+						<key>TargetNamedClipboardRedundantDisplayName</key>
+						<string>Default Clipboard</string>
+						<key>TargetNamedClipboardUID</key>
+						<string>9278C5ED-A0D8-462C-826B-2FC5E032A173</string>
+						<key>TargetUseNamedClipboard</key>
+						<false/>
+						<key>Text</key>
+						<string>%PastClipboard%1% %CurrentClipboard%</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>421633763.33254701</real>
+				<key>Name</key>
+				<string>__AS_set clipboard to vocab + meaning</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>18</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>220AB550-374D-45A8-82EA-2387416CA4A2</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>UID</key>
+		<string>DA8512F7-F323-46B1-8319-752E0495CFD0</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEC=Square=KMCOLOR:255,255,255,255==86=0=0=0=KMCOLOR:0,0,0,255</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>KeyCode</key>
+						<integer>7</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>6912</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>KeyCode</key>
+						<integer>36</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>421558159.71064299</real>
+				<key>Name</key>
+				<string>Popclip Translate</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>7</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>7D81401A-3F33-44F6-8851-79A3F33F7EA3</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>UID</key>
+		<string>DA8512F7-F323-46B1-8319-752E0495CFD0</string>
+	</dict>
+</array>
+</plist>

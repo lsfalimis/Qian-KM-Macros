@@ -30,3 +30,13 @@ Finnally, Evernote becomes useable.
 I use KeyRemap4MacBook to map ⌃⌥⌘ to ⌘_R (⌃⌥⇧⇧ to ⇧_R), simply, ⌘_L to change view, ⌘_R to change notebook (though thru mouse actions but the mouse location can be restored, see the above screenshot, in other words, they are just like menu actions.)
 
 You need to get your own mouse location thru ⌘R (record) in KM.
+
+### Add a New Word Along With the Sentence, a Timestamp and the Window Title to Your Evernote Vocabulary Note
+
+I map ⇧_R to ^⌥⇧ (see my blog for more info). Type ^⌥⇧1 to set the clipboard to the word and the meaning (from Google Translate). You will need to decide what to append to that word for this Evernote note, select that, and press ^⌥⇧2. Done!
+
+Prerequisites:
+
+- You need to install Keyboard Maestro (KM) on your Mac and they are two KM macros.
+- You need to install PopClip and the extension called [Instant Translate](https://pilotmoon.com/popclip/extensions/page/InstantTranslate).
+- You need to install the macro called `Popclip Translate` which has already included in the bundle.
