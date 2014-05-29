@@ -40,3 +40,9 @@ Prerequisites:
 - You need to install Keyboard Maestro (KM) on your Mac and they are two KM macros.
 - You need to install PopClip and the extension called [Instant Translate](https://pilotmoon.com/popclip/extensions/page/InstantTranslate).
 - You need to install the macro called `Popclip Translate` which has already included in the bundle.
+
+
+Shortcuts for bordaigorl's [sublime-evernote](https://github.com/bordaigorl/sublime-evernote)(a package for Sublime Text 3)
+Fn combo keys need to be set up. See the blog [post](http://lsfalimis.github.io/mac/2014/05/08/my-no-programmer-window-management-and-keyboard-shortcuts-settings/).
+
+![alt text](http://i.imgur.com/a5wbOqU.png "Insert")
