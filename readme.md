@@ -46,4 +46,4 @@ Prerequisites:
 
 Fn combo keys need to be set up. See the blog [post](http://lsfalimis.github.io/mac/2014/05/08/my-no-programmer-window-management-and-keyboard-shortcuts-settings/).
 
-![alt text](http://i.imgur.com/a5wbOqU.png "Insert")
+![alt text](http://i.imgur.com/pi7Oflm.png "Insert")
