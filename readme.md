@@ -47,3 +47,7 @@ Prerequisites:
 Fn combo keys need to be set up. See the blog [post](http://lsfalimis.github.io/mac/2014/05/08/my-no-programmer-window-management-and-keyboard-shortcuts-settings/).
 
 ![alt text](http://i.imgur.com/pi7Oflm.png "Insert")
+
+### Evernote Single Keystroke
+
+Same. We need this if we use Evernote a lot a lot (I mean a lot). Lack of proactive sync should be solved by effortlessly single keystroke (^⌘S, what?!).
