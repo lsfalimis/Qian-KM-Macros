@@ -48,6 +48,6 @@ Fn combo keys need to be set up. See the blog [post](http://lsfalimis.github.io/
 
 ![alt text](http://i.imgur.com/pi7Oflm.png "Insert")
 
-### Evernote Single Keystroke
+### Evernote Single Sync Keystroke
 
-Same. We need this if we use Evernote a lot a lot (I mean a lot). Lack of proactive sync should be solved by effortlessly single keystroke (^⌘S, what?!).
+Same. We need this if we use Evernote a lot a lot (I mean a lot). Lack of proactive sync should be solved by effortlessly single Sync keystroke (^⌘S, what?!).
