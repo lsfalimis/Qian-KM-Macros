@@ -40,6 +40,105 @@
 						<key>Paste</key>
 						<false/>
 						<key>Text</key>
+						<string>evernote send</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>36</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>423064654.22021699</real>
+				<key>Name</key>
+				<string>EN send S</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>120</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>0F5938E9-0E0C-404C-A4AE-DAA42A3492C8</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ST3</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.sublimetext.3</string>
+					<key>Name</key>
+					<string>Sublime Text</string>
+					<key>NewFile</key>
+					<string>/Applications/Sublime Text.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>4C4EDCEC-3589-4765-930D-6FE2D58BEDC6</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Sublime Text.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Paste</key>
+						<false/>
+						<key>Text</key>
 						<string>evernote new em</string>
 					</dict>
 					<dict>
@@ -60,7 +159,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>423062966.29787302</real>
+				<real>423064640.675964</real>
 				<key>Name</key>
 				<string>EN new N</string>
 				<key>Triggers</key>
@@ -78,6 +177,105 @@
 				</array>
 				<key>UID</key>
 				<string>CD755C7B-6B8B-4592-B87C-7CA3D4CCDBB5</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>ST3</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.sublimetext.3</string>
+					<key>Name</key>
+					<string>Sublime Text</string>
+					<key>NewFile</key>
+					<string>/Applications/Sublime Text.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>4C4EDCEC-3589-4765-930D-6FE2D58BEDC6</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Sublime Text.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Paste</key>
+						<false/>
+						<key>Text</key>
+						<string>evernote up</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>36</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>423064657.13191497</real>
+				<key>Name</key>
+				<string>EN update U</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>98</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4096</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>E48836E4-A903-480C-BEC0-47A852A2720B</string>
 			</dict>
 		</array>
 		<key>Name</key>
@@ -159,7 +357,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>423063114.72039098</real>
+				<real>423064644.33176798</real>
 				<key>Name</key>
 				<string>EN search /</string>
 				<key>Triggers</key>
@@ -258,7 +456,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>423063068.134749</real>
+				<real>423064649.38007498</real>
 				<key>Name</key>
 				<string>EN open 0</string>
 				<key>Triggers</key>
@@ -276,204 +474,6 @@
 				</array>
 				<key>UID</key>
 				<string>896A0602-2940-4246-A9BE-4E565ADC8255</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>ST3</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.sublimetext.3</string>
-					<key>Name</key>
-					<string>Sublime Text</string>
-					<key>NewFile</key>
-					<string>/Applications/Sublime Text.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>4C4EDCEC-3589-4765-930D-6FE2D58BEDC6</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CustomIconData</key>
-		<string>KMEP-GenericApplication-/Applications/Sublime Text.app</string>
-		<key>IsActive</key>
-		<true/>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>KeyCode</key>
-						<integer>35</integer>
-						<key>MacroActionType</key>
-						<string>SimulateKeystroke</string>
-						<key>Modifiers</key>
-						<integer>768</integer>
-						<key>ReleaseAll</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>Paste</key>
-						<false/>
-						<key>Text</key>
-						<string>evernote send</string>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>KeyCode</key>
-						<integer>36</integer>
-						<key>MacroActionType</key>
-						<string>SimulateKeystroke</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-						<key>ReleaseAll</key>
-						<false/>
-					</dict>
-				</array>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>423063168.63412899</real>
-				<key>Name</key>
-				<string>EN send S</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>109</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>512</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>0F5938E9-0E0C-404C-A4AE-DAA42A3492C8</string>
-			</dict>
-		</array>
-		<key>Name</key>
-		<string>ST3</string>
-		<key>Targeting</key>
-		<dict>
-			<key>Targeting</key>
-			<string>Included</string>
-			<key>TargetingApps</key>
-			<array>
-				<dict>
-					<key>BundleIdentifier</key>
-					<string>com.sublimetext.3</string>
-					<key>Name</key>
-					<string>Sublime Text</string>
-					<key>NewFile</key>
-					<string>/Applications/Sublime Text.app</string>
-				</dict>
-			</array>
-		</dict>
-		<key>UID</key>
-		<string>4C4EDCEC-3589-4765-930D-6FE2D58BEDC6</string>
-	</dict>
-	<dict>
-		<key>Activate</key>
-		<string>Normal</string>
-		<key>CustomIconData</key>
-		<string>KMEP-GenericApplication-/Applications/Sublime Text.app</string>
-		<key>IsActive</key>
-		<true/>
-		<key>Macros</key>
-		<array>
-			<dict>
-				<key>Actions</key>
-				<array>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>KeyCode</key>
-						<integer>35</integer>
-						<key>MacroActionType</key>
-						<string>SimulateKeystroke</string>
-						<key>Modifiers</key>
-						<integer>768</integer>
-						<key>ReleaseAll</key>
-						<false/>
-					</dict>
-					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>Paste</key>
-						<false/>
-						<key>Text</key>
-						<string>evernote up</string>
-					</dict>
-					<dict>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<false/>
-						<key>KeyCode</key>
-						<integer>36</integer>
-						<key>MacroActionType</key>
-						<string>SimulateKeystroke</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-						<key>ReleaseAll</key>
-						<false/>
-					</dict>
-				</array>
-				<key>IsActive</key>
-				<true/>
-				<key>ModificationDate</key>
-				<real>423063117.34487998</real>
-				<key>Name</key>
-				<string>EN update U</string>
-				<key>Triggers</key>
-				<array>
-					<dict>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>KeyCode</key>
-						<integer>109</integer>
-						<key>MacroTriggerType</key>
-						<string>HotKey</string>
-						<key>Modifiers</key>
-						<integer>512</integer>
-					</dict>
-				</array>
-				<key>UID</key>
-				<string>E48836E4-A903-480C-BEC0-47A852A2720B</string>
 			</dict>
 		</array>
 		<key>Name</key>
