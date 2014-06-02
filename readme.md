@@ -1,6 +1,6 @@
 ### Keyboard Maestro action shortcuts
 
-**One action in a macro has to been selected before triggering the macro!**
+**One action in a macro has to been selected AND the action menu has to been open (the shortcut is ⌘K) BEFORE triggering the macro!**
 
 ![alt text](http://i.imgur.com/sgync5B.png "Insert")
 
