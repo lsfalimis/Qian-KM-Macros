@@ -5,6 +5,8 @@ Note: The window size for these macros is Moom 4x3 on rMBP.
 
 The file name is `KM-action-shortcuts.kmmacros`.
 
+![alt text](http://i.imgur.com/WYsqXaU.png "Insert")
+
 Enjoy!
 
 ### Keyboard Maestro new group shortcut
