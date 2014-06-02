@@ -1,3 +1,22 @@
+### Keyboard Maestro action shortcuts
+![alt text](http://i.imgur.com/sgync5B.png "Insert")
+
+Note: The window size for these macros is Moom 4x3 on rMBP.
+
+The file name is `KM-action-shortcuts.kmmacros`.
+
+Enjoy!
+
+### Keyboard Maestro new group shortcut
+
+![alt text](http://i.imgur.com/WgtvtJm.png "Insert")
+
+Note: The window size for this macro is Moom 4x3 on rMBP.
+
+The file name is `KM-New-Group-shortcut.kmmacros`.
+
+Enjoy!
+
 ### ⌘C
 ![alt text](http://i.imgur.com/jgq2pS7.png "⌘C")
 
