@@ -1,0 +1,1816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>--http://www.organognosi.com
+tell application "Skim"
+	set colorMessage to ""
+	set pageNotes to notes of current page of document 1
+	repeat with pageNote in pageNotes
+		set noteColor to color of pageNote
+		set noteColorText to ""
+		repeat with codeColor in noteColor
+			set noteColorText to noteColorText &amp; codeColor &amp; " "
+		end repeat
+		set noteText to text of pageNote
+		set lengthNoteText to length of noteText
+		if lengthNoteText &gt; 10 then
+			set noteText to characters 1 thru 10 of noteText as text
+		else
+			set noteText to noteText
+		end if
+		set colorMessage to colorMessage &amp; "The color code of the note \"" &amp; noteText &amp; "...\" is " &amp; noteColorText &amp; return &amp; return
+	end repeat
+	display dialog colorMessage
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>423237458.38382202</real>
+				<key>Name</key>
+				<string>Get Skim RGBAlpha Colour Code</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>63B30E6A-E7F9-496A-B6B6-64904B37ACF1</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Notes</string>
+							<string>New Highlight</string>
+						</array>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>427479092.56412297</real>
+				<key>Name</key>
+				<string>Highlight  (Node)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>0</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>D3F30699-BDA8-45B5-BAF7-D29A00A3221B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Notes</string>
+							<string>New Highlight</string>
+						</array>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Click</string>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>1</integer>
+						<key>DisplayMatches</key>
+						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>1321</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Screen</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<true/>
+						<key>VerticalPositionExpression</key>
+						<string>175</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>424406773.85474098</real>
+				<key>Name</key>
+				<string>Highlight (Attention)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>14</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>92F12776-0421-45E6-88DF-563D06E0DB54</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Notes</string>
+							<string>New Highlight</string>
+						</array>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Click</string>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>1</integer>
+						<key>DisplayMatches</key>
+						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>1326</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Screen</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<true/>
+						<key>VerticalPositionExpression</key>
+						<string>138</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>424407007.57521999</real>
+				<key>Name</key>
+				<string>Highlight (Group)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>5</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>2FE8EC83-3725-4937-B58C-B7D0C937B2CE</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Notes</string>
+							<string>New Highlight</string>
+						</array>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Click</string>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>1</integer>
+						<key>DisplayMatches</key>
+						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>1321</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Screen</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<true/>
+						<key>VerticalPositionExpression</key>
+						<string>157</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>427479111.57904202</real>
+				<key>Name</key>
+				<string>Highlight (Point)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>8922F405-485E-4943-AD65-676D6EB2B7D6</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Notes</string>
+							<string>New Highlight</string>
+						</array>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Click</string>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>1</integer>
+						<key>DisplayMatches</key>
+						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>1318</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Screen</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<true/>
+						<key>VerticalPositionExpression</key>
+						<string>191</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>424407173.868882</real>
+				<key>Name</key>
+				<string>Highlight (Reference)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>15</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>AE69294F-0B7A-4F2A-99D6-EC274033FB3D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>--http://www.organognosi.com
+tell application "Skim"
+	set colorMessage to ""
+	set pageNotes to notes of current page of document 1
+	repeat with pageNote in pageNotes
+		set noteColor to color of pageNote
+		set noteColorText to ""
+		repeat with codeColor in noteColor
+			set noteColorText to noteColorText &amp; codeColor &amp; " "
+		end repeat
+		set noteText to text of pageNote
+		set lengthNoteText to length of noteText
+		if lengthNoteText &gt; 10 then
+			set noteText to characters 1 thru 10 of noteText as text
+		else
+			set noteText to noteText
+		end if
+		set colorMessage to colorMessage &amp; "The color code of the note \"" &amp; noteText &amp; "...\" is " &amp; noteColorText &amp; return &amp; return
+	end repeat
+	display dialog colorMessage
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>425152406.77109402</real>
+				<key>Name</key>
+				<string>key.SK.as.colour</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>8CD8A790-8048-4BFF-8EAE-81ACD2280E4D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>(* PROPERTIES *)
+property LF : (ASCII character 10)
+property LF1 : (ASCII character 32) &amp; (ASCII character 32) &amp; (ASCII character 10)
+property tid : AppleScript's text item delimiters
+
+
+(* THE SCRIPT *)
+tell application "Skim"
+	
+	--get info for all notes
+	set allNotes to every note of document 1
+	set allNotes_types to every type of notes of document 1
+	set allNotes_text to text of every note of document 1
+	set allNotes_pages to index of every page of every note of document 1
+	
+	--get info for all notes except top 3
+	set selNotes to items 4 through -1 of allNotes
+	set selNotes_types to items 4 through -1 of allNotes_types
+	set selNotes_text to items 4 through -1 of allNotes_text
+	set selNotes_pages to items 4 through -1 of allNotes_pages
+	
+	--get info from those top 3 notes
+	set Markdownlink to (get text of note 2 of page 1 of document 1) as string
+	set pdfTitle to (get extended text of note 1 of page 1 of document 1) as string
+	set PDFLink to (get text of note 1 of page 1 of document 1) as string
+	set number_of_Note3 to (get text of note 3 of page 1 of document 1) as string
+	
+	--prepare Headers for all of the various note types
+	set notesText_text to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;The ToC&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	set notesText_anchor to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;Comments&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	set notesText_highlight to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;Highlights&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	set notesText_underline to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;Underlines&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	set notesText_strikethru to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;Strike-Throughs&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	
+	
+	(* THE MEAT-N-POTATOES OF THE SCRIPT *)
+	repeat with i from 1 to count of selNotes_types
+		
+		--prepare Skim page # and actual page #
+		set notePage to item i of selNotes_pages
+		set theRealPage to notePage + number_of_Note3 as string
+		
+		--collect Text Notes
+		if item i of selNotes_types is text note then
+			set noteText to item i of selNotes_text
+			set notesText_text to notesText_text &amp; "&lt;p&gt;" &amp; noteText &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;" &amp; "p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+			
+			--collect Anchor Notes	
+		else if item i of selNotes_types is anchored note then
+			set titleText to item i of selNotes_text
+			set noteText to extended text of item i of selNotes
+			set notesText_anchor to notesText_anchor &amp; "&lt;p&gt;&lt;strong&gt;" &amp; titleText &amp; ":&lt;/strong&gt; " &amp; noteText &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+			
+			--collect Underline Notes	
+		else if item i of selNotes_types is underline note then
+			set noteText to item i of selNotes_text
+			set notesText_underline to notesText_underline &amp; "&lt;p&gt;\"" &amp; noteText &amp; "\"" &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;" &amp; "p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+			
+			--collect Strike-Thru Notes	
+		else if item i of selNotes_types is strike out note then
+			set noteText to item i of selNotes_text
+			set notesText_strikethru to notesText_strikethru &amp; "&lt;p&gt;\"" &amp; noteText &amp; "\"" &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;" &amp; "p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+			
+			--collect Highlight Notes	
+		else if item i of selNotes_types is highlight note then
+			set theColor to color of item i of selNotes
+			set titleText to my color2text(theColor)
+			set noteText to item i of selNotes_text
+			
+			set notesText_highlight to notesText_highlight &amp; "&lt;p&gt;&lt;strong&gt;" &amp; titleText &amp; ":&lt;/strong&gt; " &amp; LF1 &amp; "\"" &amp; noteText &amp; "\"" &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+		end if
+	end repeat
+	
+	--extract only the "Summary" highlight notes
+	set theSummary to {}
+	set theParas to paragraphs of notesText_highlight
+	repeat with i from 1 to count of theParas
+		if item i of theParas contains "&lt;p&gt;&lt;strong&gt;ref:" then
+			set theTitle to item i of theParas
+			set theText to item (i + 1) of theParas
+			set theSumm to theTitle &amp; LF &amp; theText &amp; LF &amp; LF
+			copy theSumm to the end of theSummary
+		end if
+	end repeat
+	
+	--remove "Summary" highlight notes from collection of highlight notes
+	if (not (theSummary is {})) then
+		set SumText to theSummary as string
+		set SumList to paragraphs of SumText
+		set empty to {""}
+		set FinalSum to my cleanmyList(SumList, empty)
+		
+		set HighList to paragraphs of notesText_highlight
+		set finalHighlights to my cleanmyList(HighList, FinalSum)
+		set AppleScript's text item delimiters to LF
+		set notesText_highlight to (finalHighlights as string)
+		set theSummary to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;References&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF &amp; SumText
+	end if
+	--ALWAYS RETURN TEXT ITEM DELIMITERS TO NORMAL
+	set AppleScript's text item delimiters to tid
+	
+	--remove any note sections that are empty
+	set FinalList to my textCheck(notesText_text, notesText_anchor, notesText_highlight, notesText_underline, notesText_strikethru, theSummary)
+	
+	--prepare the final collection of notes, with MetaData
+	set FinalText to FinalList
+	
+	--create new Evernote note
+	tell application "Evernote"
+		
+		--create new "notes" tag if necessary
+		if (not (tag named "notes" exists)) then
+			set theTag to make tag with properties {name:"notes"}
+		else
+			set theTag to tag "notes"
+		end if
+		
+		--create new "__" notebook if necessary
+		if (not (notebook named "__" exists)) then
+			make notebook with properties {name:"__"}
+		end if
+		
+		set theTitle to "Notes: " &amp; pdfTitle
+		set newNote to create note title theTitle with html FinalText notebook "__"
+		assign theTag to newNote
+	end tell
+	
+end tell
+
+
+
+
+
+
+
+
+
+(* HANDLERS *)
+
+--convert highlights into text values
+on color2text(noteColor)
+	set colorText to {}
+	
+	if noteColor is {65535, 65531, 2689, 65535} then
+		set end of colorText to "n"
+	else if noteColor is {49560, 60542, 23241, 65535} then
+		set end of colorText to "grp"
+	else if noteColor is {38537, 46063, 61931, 65535} then
+		set end of colorText to "pt"
+	else if noteColor is {59898, 37357, 50126, 65535} then
+		set end of colorText to "attn"
+	else if noteColor is {59859, 51605, 65183, 65535} then
+		set end of colorText to "ref"
+	end if
+	
+	return colorText
+end color2text
+
+
+--generate random link IDs
+on randomize(theVal)
+	set theAlphabet to {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
+	set randomLetter to random number from 1 to 26
+	set randomLetter to item randomLetter of theAlphabet
+	set theNum1 to random number from 1 to 9
+	set theNum2 to random number from 1 to 9
+	set LinkID to theVal &amp; theNum1 &amp; theNum2 &amp; randomLetter
+	return LinkID
+end randomize
+
+--remove any empty note sections
+on textCheck(notesText_text, notesText_anchor, notesText_highlight, notesText_underline, notesText_strikethru, theSummary)
+	
+	if notesText_text is "&lt;hr /&gt;
+
+&lt;h2&gt;The ToC&lt;/h2&gt;  
+
+
+" then
+		set notesText_text to ""
+	else
+		set notesText_text to notesText_text &amp; LF &amp; LF
+	end if
+	
+	if notesText_anchor is "&lt;hr /&gt;
+
+&lt;h2&gt;Comments&lt;/h2&gt;  
+
+
+" then
+		set notesText_anchor to ""
+	else
+		set notesText_anchor to notesText_anchor &amp; LF &amp; LF
+	end if
+	
+	if notesText_highlight is "&lt;hr /&gt;
+
+&lt;h2&gt;Highlights&lt;/h2&gt;  
+
+
+" then
+		set notesText_highlight to ""
+	else
+		set notesText_highlight to notesText_highlight &amp; LF &amp; LF
+	end if
+	
+	if notesText_underline is "&lt;hr /&gt;
+
+&lt;h2&gt;Underlines&lt;/h2&gt;  
+
+
+" then
+		set notesText_underline to ""
+	else
+		set notesText_underline to notesText_underline &amp; LF &amp; LF
+	end if
+	
+	if notesText_strikethru is "&lt;hr /&gt;
+
+&lt;h2&gt;Strike-Throughs&lt;/h2&gt;  
+
+
+" then
+		set notesText_strikethru to ""
+	else
+		set notesText_strikethru to notesText_strikethru &amp; LF &amp; LF
+	end if
+	
+	if theSummary is {} then
+		set theSummary to ""
+	else
+		set theSummary to theSummary &amp; LF &amp; LF
+	end if
+	
+	return notesText_text &amp; theSummary &amp; notesText_anchor &amp; notesText_highlight &amp; notesText_underline &amp; notesText_strikethru
+end textCheck
+
+--remove items from a list
+on cleanmyList(theList, itemsToDelete)
+	set cleanList to {}
+	repeat with i from 1 to count theList
+		if {theList's item i} is not in itemsToDelete then set cleanList's end to theList's item i
+	end repeat
+	return cleanList
+end cleanmyList
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>427299392.98296899</real>
+				<key>Name</key>
+				<string>key.SK.as.exp.EN</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>14</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>A8C0BF6E-C261-4595-97CF-F0E35C52CD29</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%PastClipboard%2%</string>
+						<key>Variable</key>
+						<string>pb2</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%PastClipboard%1%</string>
+						<key>Variable</key>
+						<string>pb1</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%CurrentClipboard%</string>
+						<key>Variable</key>
+						<string>pb</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Capitalize</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>FilterVariable</string>
+						<key>Variable</key>
+						<string>pb2</string>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>pb1</string>
+									<key>VariableConditionType</key>
+									<string>Matches</string>
+									<key>VariableValue</key>
+									<string>\d{4}</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+									</dict>
+									<dict>
+										<key>Button</key>
+										<string>Cancel</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Year</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string></string>
+								<key>Variables</key>
+								<array>
+									<dict>
+										<key>Default</key>
+										<string>200</string>
+										<key>Variable</key>
+										<string>pb1</string>
+									</dict>
+								</array>
+							</dict>
+						</array>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array/>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>TitleCase</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>FilterVariable</string>
+						<key>Variable</key>
+						<string>pb</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>JustDisplay</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetClipboardToText</string>
+						<key>TargetNamedClipboardRedundantDisplayName</key>
+						<string>Default Clipboard</string>
+						<key>TargetNamedClipboardUID</key>
+						<string>99BAF138-FFC7-4D9C-84B8-4B776F40BE89</string>
+						<key>TargetUseNamedClipboard</key>
+						<false/>
+						<key>Text</key>
+						<string>%Variable%pb2% - %Variable%pb1% - %Variable%pb%</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>File</string>
+							<string>Save As...</string>
+						</array>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>9</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>36</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>(* GENERATE 3 INITIAL SKIM NOTES WITH LINKING INFO (CUSTOM URL VERSION)
+
+-- created by Stephen Margheim
+-- 13 July 2013
+-- open source
+
+REQUIRED PROGRAMS:
+	-- Skim
+
+This script requires setting up the custom URL handler described [here](http://hackademic.postach.io/page/create-a-custom-url-scheme-for-free). 
+
+It will insert 3 notes at the top of your current PDF. Simply open the PDF in Skim and run the app/script. The 3 generated notes contain linking information used in the Export Skim Notes script. 
+* Note 1 includes the custom URL and the pdf's title. 
+* Note 2 includes a Markdown formatted link
+* Note 3 includes a field to be filled depending on the relation of the printed page numbers and the Skim-based page numbers.
+
+*)
+
+tell application "Skim"
+	set theFile to file of document 1 as string
+	set theHome to path to home folder as string
+	set theFilePath to my replaceString(theFile, theHome, "")
+	
+	set pdfPath to my encode_text(theFilePath, true, false)
+	set pdfPath to my replaceString(pdfPath, ":", "/")
+	
+	set customurl to "customurl://com.hackademic.AppleScript.URL_Handler?action=1$" &amp; pdfPath &amp; "#"
+	
+	set PdfName to name of document 1
+	
+	set docPath to path of front document
+	set notesPath to text 1 thru -5 of docPath &amp; " (notes).skim"
+	
+	--save the document and its notes as-is
+	save front document
+	save front document in notesPath
+	
+	delete notes of front document
+	
+	--create the three opening notes
+	tell page 1 of document 1
+		make note with properties {type:anchored note, bounds:{523, 760, 540, 760}, text:customurl, extended text:PdfName}
+		delay 0.1
+		make note with properties {type:anchored note, bounds:{523, 780, 540, 780}, text:"[" &amp; PdfName &amp; "](" &amp; customurl}
+		delay 0.1
+		make note with properties {type:anchored note, bounds:{523, 760, 540, 760}, text:"0", extended text:"[change to appropriate number: (1) IF skim p# = printed p# --&gt; 0 (2) IF skim p# &gt; printed p# --&gt; pr# - sk# (3) IF random printed p# --&gt; ra# - 1 (if also FrontPage, ra# - 2)]"}
+	end tell
+	
+	--return any previously existing notes
+	read notes front document from notesPath without replacing
+	
+end tell
+
+
+(* SUB-ROUTINES *)
+
+on encode_text(this_text, encode_URL_A, encode_URL_B)
+	set the standard_characters to "abcdefghijklmnopqrstuvwxyz0123456789"
+	set the URL_A_chars to "$+!'/?;&amp;@=#%&gt;&lt;{}[]\"~`^\\|*"
+	set the URL_B_chars to ".-_:"
+	set the acceptable_characters to the standard_characters
+	if encode_URL_A is false then set the acceptable_characters to the acceptable_characters &amp; the URL_A_chars
+	if encode_URL_B is false then set the acceptable_characters to the acceptable_characters &amp; the URL_B_chars
+	set the encoded_text to ""
+	repeat with this_char in this_text
+		if this_char is in the acceptable_characters then
+			set the encoded_text to (the encoded_text &amp; this_char)
+		else
+			set the encoded_text to (the encoded_text &amp; encode_char(this_char)) as string
+		end if
+	end repeat
+	return the encoded_text
+end encode_text
+
+
+on encode_char(this_char)
+	set the ASCII_num to (the ASCII number this_char)
+	set the hex_list to {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"}
+	set x to item ((ASCII_num div 16) + 1) of the hex_list
+	set y to item ((ASCII_num mod 16) + 1) of the hex_list
+	return ("%" &amp; x &amp; y) as string
+end encode_char
+
+on replaceString(theText, oldString, newString)
+	-- ljr (http://applescript.bratis-lover.net/library/string/)
+	local ASTID, theText, oldString, newString, lst
+	set ASTID to AppleScript's text item delimiters
+	try
+		considering case
+			set AppleScript's text item delimiters to oldString
+			set lst to every text item of theText
+			set AppleScript's text item delimiters to newString
+			set theText to lst as string
+		end considering
+		set AppleScript's text item delimiters to ASTID
+		return theText
+	on error eMsg number eNum
+		set AppleScript's text item delimiters to ASTID
+		error "Can't replaceString: " &amp; eMsg number eNum
+	end try
+end replaceString
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>PDF</string>
+							<string>Automatically Resize</string>
+						</array>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>427476459.90252298</real>
+				<key>Name</key>
+				<string>key.SK.as.link</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>1</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>7733402A-8D64-4F5C-8DF1-75F0FC98B535</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%PastClipboard%2%</string>
+						<key>Variable</key>
+						<string>pb2</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%PastClipboard%1%</string>
+						<key>Variable</key>
+						<string>pb1</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%CurrentClipboard%</string>
+						<key>Variable</key>
+						<string>pb</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Capitalize</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>FilterVariable</string>
+						<key>Variable</key>
+						<string>pb2</string>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>pb1</string>
+									<key>VariableConditionType</key>
+									<string>Matches</string>
+									<key>VariableValue</key>
+									<string>\d{4}</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+									</dict>
+									<dict>
+										<key>Button</key>
+										<string>Cancel</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Year</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string></string>
+								<key>Variables</key>
+								<array>
+									<dict>
+										<key>Default</key>
+										<string>200</string>
+										<key>Variable</key>
+										<string>pb1</string>
+									</dict>
+								</array>
+							</dict>
+						</array>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array/>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Capitalize</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>FilterVariable</string>
+						<key>Variable</key>
+						<string>pb</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>JustDisplay</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetClipboardToText</string>
+						<key>TargetNamedClipboardRedundantDisplayName</key>
+						<string>Default Clipboard</string>
+						<key>TargetNamedClipboardUID</key>
+						<string>99BAF138-FFC7-4D9C-84B8-4B776F40BE89</string>
+						<key>TargetUseNamedClipboard</key>
+						<false/>
+						<key>Text</key>
+						<string>%Variable%pb2% - %Variable%pb1% - %Variable%pb%</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>427479179.96793801</real>
+				<key>Name</key>
+				<string>key.SK.rename</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>15</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>3CF548DB-F893-4556-8B92-C21C8B7588A6</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>15</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>768</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>425152308.25035203</real>
+				<key>Name</key>
+				<string>str.SK.adjust</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>Case</key>
+						<string>Exact</string>
+						<key>DiacriticalsMatter</key>
+						<true/>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>OnlyAfterWordBreak</key>
+						<false/>
+						<key>SimulateDeletes</key>
+						<false/>
+						<key>TypedString</key>
+						<string>xz</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>0BD20909-7BFC-486C-9C24-C04D1762094F</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Notes</string>
+							<string>New Underline</string>
+						</array>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>424407159.04288</real>
+				<key>Name</key>
+				<string>Underline  (Point)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>FA1337DC-3D8D-4D67-871D-41B644B32EA4</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app.SK</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+</array>
+</plist>
